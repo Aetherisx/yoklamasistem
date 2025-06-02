@@ -56,7 +56,7 @@ namespace yoklamasistem
             DataGridViewComboBoxColumn colDurum = new DataGridViewComboBoxColumn();
             colDurum.Name = "colDurum";
             colDurum.HeaderText = "Durum";
-            colDurum.Items.AddRange("Geldi", "Gelmedi", "İzinli"); // Seçenekler
+            colDurum.Items.AddRange("Geldi", "Gelmedi"); // Seçenekler
             colDurum.DataPropertyName = "Durum"; // Eğer mevcut bir yoklama kaydı varsa buradan yüklenecek
             dgvStudents.Columns.Add(colDurum);
 

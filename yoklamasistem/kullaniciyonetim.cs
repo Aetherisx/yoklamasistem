@@ -226,7 +226,7 @@ namespace yoklamasistem
         // txtKullaniciAra adında bir TextBox olduğunu varsayıyorum.
         private void txtKullaniciAra_TextChanged(object sender, EventArgs e)
         {
-            LoadKullanicilar(txtArama.Text); // Arama kelimesiyle kullanıcıları yeniden yükle
+            
         }
 
         // --- Özel Cell Şablonu: DataGridViewPasswordCell ---

@@ -38,7 +38,6 @@
             DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             pnlToolBar = new Panel();
-            txtArama = new TextBox();
             btnYeni = new Button();
             dataGridView1 = new DataGridView();
             colid = new DataGridViewTextBoxColumn();
@@ -57,23 +56,12 @@
             // 
             pnlToolBar.BackColor = Color.WhiteSmoke;
             pnlToolBar.BorderStyle = BorderStyle.FixedSingle;
-            pnlToolBar.Controls.Add(txtArama);
             pnlToolBar.Controls.Add(btnYeni);
             pnlToolBar.Dock = DockStyle.Top;
             pnlToolBar.Location = new Point(10, 10);
             pnlToolBar.Name = "pnlToolBar";
             pnlToolBar.Size = new Size(930, 50);
             pnlToolBar.TabIndex = 0;
-            // 
-            // txtArama
-            // 
-            txtArama.BorderStyle = BorderStyle.FixedSingle;
-            txtArama.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            txtArama.Location = new Point(675, 11);
-            txtArama.Name = "txtArama";
-            txtArama.PlaceholderText = "Kullanıcı ara...";
-            txtArama.Size = new Size(250, 27);
-            txtArama.TabIndex = 1;
             // 
             // btnYeni
             // 
@@ -189,7 +177,6 @@
             Padding = new Padding(10);
             Size = new Size(950, 700);
             pnlToolBar.ResumeLayout(false);
-            pnlToolBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -197,7 +184,6 @@
         #endregion
 
         private Panel pnlToolBar;
-        private TextBox txtArama;
         private Button btnYeni;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn colid;

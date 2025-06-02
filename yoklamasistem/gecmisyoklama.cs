@@ -114,16 +114,6 @@ namespace yoklamasistem
             dgvAttendanceHistory.Columns.Add(new DataGridViewTextBoxColumn() { Name = "colGelenOgrenci", HeaderText = "Katılım", DataPropertyName = "GelenOgrenci", ReadOnly = true });
             dgvAttendanceHistory.Columns.Add(new DataGridViewTextBoxColumn() { Name = "colDevamsizOgrenci", HeaderText = "Devamsız", DataPropertyName = "DevamsizOgrenci", ReadOnly = true });
 
-            // "İşlemler" sütununu ekle (Görüntüle butonu için)
-            DataGridViewButtonColumn viewButtonColumn = new DataGridViewButtonColumn();
-            viewButtonColumn.Name = "colIslemler";
-            viewButtonColumn.HeaderText = "İşlemler";
-            viewButtonColumn.Text = "Görüntüle";
-            viewButtonColumn.UseColumnTextForButtonValue = true; // Buton üzerinde "Görüntüle" yazsın
-            dgvAttendanceHistory.Columns.Add(viewButtonColumn);
-
-            // Buton tıklama olayını bağla
-            dgvAttendanceHistory.CellContentClick += dgvAttendanceHistory_CellContentClick;
         }
         private void LoadAttendanceHistory(DateTime? startDate, DateTime? endDate, int dersID)
         {
